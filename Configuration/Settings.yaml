@@ -1,0 +1,4 @@
+Sitegeist:
+  Neos:
+    SymfonyMailer:
+      dsn: 'sendmail://default'
