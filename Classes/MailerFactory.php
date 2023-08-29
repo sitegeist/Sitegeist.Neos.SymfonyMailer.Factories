@@ -4,6 +4,7 @@ declare(strict_types=1);
 
 namespace Sitegeist\Neos\SymfonyMailer\Factories;
 
+use Neos\Flow\Annotations as Flow;
 use Symfony\Component\Mailer\Mailer;
 use Symfony\Component\Mailer\MailerInterface;
 use Symfony\Component\Mailer\Transport;
@@ -11,17 +12,10 @@ use Symfony\Component\Mailer\Transport;
 class MailerFactory
 {
     /**
+     * @Flow\InjectConfiguration(package="Sitegeist.Neos.SymfonyMailer", path="")
      * @var mixed[]
      */
     protected array $configuration = [];
-
-    /**
-     * @param mixed[] $configuration
-     */
-    public function injectSettings(array $configuration): void
-    {
-        $this->configuration = $configuration;
-    }
 
     /**
      * @param string|string[]|null $dsn
