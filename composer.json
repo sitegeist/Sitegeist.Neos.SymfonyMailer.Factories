@@ -23,6 +23,11 @@
             "Sitegeist\\Neos\\SymfonyMailer\\Factories\\": "Classes/"
         }
     },
+    "config": {
+        "allow-plugins": {
+            "neos/composer-plugin": true
+        }
+    },
     "extra": {
         "neos": {
             "package-key": "Sitegeist.Neos.SymfonyMailer.Factories"
